@@ -3,272 +3,331 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-
-    <!-- CSS -->
+    <meta name="description" content="Gopika Priyanka — AI, ML, Data Science and Full Stack developer portfolio">
+    <title>Gopika Priyanka | Premium Portfolio</title>
     <link rel="stylesheet" href="style.css">
-
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-<!-- ================= HEADER ================= -->
-
-<header>
-
-    <div class="logo">
-        <h2>Portfolio</h2>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader"></div>
     </div>
 
-    <nav>
+    <div class="progress-bar" id="progressBar"></div>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
-        <ul>
-
-            <li><a href="#home">Home</a></li>
-
-            <li><a href="#about">About</a></li>
-
-            <li><a href="#skills">Skills</a></li>
-
-            <li><a href="#projects">Projects</a></li>
-
-            <li><a href="#resume">Resume</a></li>
-
-            <li><a href="#contact">Contact</a></li>
-
-        </ul>
-
-    </nav>
-
-</header>
-
-<!-- ================= HERO ================= -->
-
-<section id="home" class="hero">
-
-    <div class="hero-text">
-
-        <h3>Hello, I'm</h3>
-
-        <h1>Gopika Priyanka</h1>
-
-        <h2>Computer Science Student</h2>
-
-        <p>
-            Passionate about Web Development,
-            Artificial Intelligence,
-            Python and C Programming.
-        </p>
-
-        <a href="#projects" class="btn">
-            View Projects
+    <header role="banner">
+        <a class="logo" href="#home" aria-label="Homepage">
+            <span aria-hidden="true">GP</span>
+            <h2>Gopika</h2>
         </a>
-
-    </div>
-
-    <div class="hero-image">
-
-        <img src="images/profile.jpg"
-        alt="Profile">
-
-    </div>
-
-</section>
-
-<!-- ================= ABOUT ================= -->
-
-<section id="about">
-
-<h2 class="section-title">
-About Me
-</h2>
-
-<p>
-
-I am a Artificial Intelligence Engineering student passionate about
-software development, AI, web technologies, and problem solving.
-I enjoy building responsive websites and learning modern technologies.
-
-</p>
-
-</section>
-
-<!-- ================= SKILLS ================= -->
-
-<section id="skills">
-
-<h2 class="section-title">
-Skills
-</h2>
-
-<div class="skills-container">
-
-<div class="skill">
-<i class="fa-brands fa-html5"></i>
-<h3>HTML</h3>
-</div>
-
-<div class="skill">
-<i class="fa-brands fa-css3-alt"></i>
-<h3>CSS</h3>
-</div>
-
-<div class="skill">
-<i class="fa-brands fa-js"></i>
-<h3>JavaScript</h3>
-</div>
-
-<div class="skill">
-<i class="fa-brands fa-python"></i>
-<h3>Python</h3>
-</div>
-
-<div class="skill">
-<i class="fa-solid fa-c"></i>
-<h3>C</h3>
-</div>
-
-<div class="skill">
-<i class="fa-brands fa-github"></i>
-<h3>GitHub</h3>
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= PROJECTS ================= -->
-
-<section id="projects">
-
-<h2 class="section-title">
-Projects
-</h2>
-
-<div class="project-container">
-
-<div class="project-card">
-
-<h3>Portfolio Website</h3>
-
-<p>
-
-Responsive portfolio website using
-HTML, CSS and JavaScript.
-
-</p>
-
-</div>
-
-<div class="project-card">
-
-<h3>Weather App</h3>
-
-<p>
-
-Simple weather application using API.
-
-</p>
-
-</div>
-
-<div class="project-card">
-
-<h3>Student Management System</h3>
-
-<p>
-
-Python project for managing student records.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= RESUME ================= -->
-
-<section id="resume">
-
-<h2 class="section-title">
-Resume
-</h2>
-
-<a href="assets/resume.pdf"
-download
-class="btn">
-
-Download Resume
-
-</a>
-
-</section>
-
-<!-- ================= CONTACT ================= -->
-
-<section id="contact">
-
-<h2 class="section-title">
-Contact
-</h2>
-
-<p>
-
-<i class="fa-solid fa-envelope"></i>
-
-gopikapriyanka@example.com
-
-</p>
-
-<p>
-
-<i class="fa-solid fa-phone"></i>
-
-+91 7358938858
-
-</p>
-
-<p>
-
-<i class="fa-brands fa-linkedin"></i>
-
-LinkedIn Profile
-
-</p>
-
-<p>
-
-<i class="fa-brands fa-github"></i>
-
-GitHub Profile
-
-</p>
-
-</section>
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-<p>
-
-© 2026 Gopika Priyanka
-
-</p>
-
-</footer>
-
-<!-- JavaScript -->
-
-<script src="script.js"></script>
-
+        <nav role="navigation" aria-label="Primary navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" aria-pressed="false" aria-label="Toggle theme">
+            <i class="fa-solid fa-moon" aria-hidden="true"></i>
+        </button>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-blob blob-one"></div>
+            <div class="hero-blob blob-two"></div>
+            <div class="particles" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">AI • ML • Data Science • Full Stack</p>
+                    <h1>Hi, I'm <span>Gopika Priyanka</span></h1>
+                    <div class="typing-wrap">
+                        <span class="typing-text" id="typingText"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p>
+                        I’m a B.Tech Computer Science student focused on artificial intelligence, machine learning, data-driven products, and modern full-stack experiences.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="assets/Gopika_Priyanka_FlowCV_Resume_2026-05-16-1.pdf" download class="btn">Download Resume</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                    <div class="social-links" aria-label="Social links">
+                        <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" title="GitHub (opens in new tab)"><span class="sr-only">GitHub</span><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                        <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer" title="LinkedIn (opens in new tab)"><span class="sr-only">LinkedIn</span><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="mailto:gopikapriyanka@example.com" title="Email"><span class="sr-only">Email</span><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+                        <a href="https://leetcode.com/your-username" target="_blank" rel="noopener noreferrer" title="LeetCode (opens in new tab)"><span class="sr-only">LeetCode</span><i class="fa-solid fa-code" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+                <div class="hero-card">
+                    <div class="avatar-glow">
+                        <div class="avatar">GP</div>
+                    </div>
+                    <div class="hero-card-body">
+                        <h3>Currently Building</h3>
+                        <ul>
+                            <li>AI-powered solutions</li>
+                            <li>Responsive full-stack interfaces</li>
+                            <li>Data-driven dashboards and insights</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-card glass-card">
+                        <h3>Who I am</h3>
+                        <p>I’m an enthusiastic Computer Science student who enjoys transforming ideas into meaningful digital products through clean code, thoughtful design, and continuous learning.</p>
+                    </div>
+                    <div class="about-card glass-card">
+                        <h3>My Focus</h3>
+                        <p>I’m deeply interested in AI, machine learning, NLP, data science, and modern web development, with a strong interest in creating practical, impactful solutions.</p>
+                    </div>
+                    <div class="about-card glass-card">
+                        <h3>My Goal</h3>
+                        <p>I aim to build a career where I can combine technical depth with creative problem-solving to develop products that are both powerful and intuitive.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-layout">
+                    <div class="skill-group glass-card">
+                        <h3>Programming</h3>
+                        <div class="skill-row"><span>C</span><div class="bar"><i style="--value: 82%"></i></div></div>
+                        <div class="skill-row"><span>Python</span><div class="bar"><i style="--value: 90%"></i></div></div>
+                        <div class="skill-row"><span>Java</span><div class="bar"><i style="--value: 72%"></i></div></div>
+                        <div class="skill-row"><span>SQL</span><div class="bar"><i style="--value: 84%"></i></div></div>
+                    </div>
+
+                    <div class="skill-group glass-card">
+                        <h3>Web Development</h3>
+                        <div class="skill-row"><span>HTML</span><div class="bar"><i style="--value: 92%"></i></div></div>
+                        <div class="skill-row"><span>CSS</span><div class="bar"><i style="--value: 88%"></i></div></div>
+                        <div class="skill-row"><span>JavaScript</span><div class="bar"><i style="--value: 85%"></i></div></div>
+                        <div class="skill-row"><span>React</span><div class="bar"><i style="--value: 78%"></i></div></div>
+                    </div>
+
+                    <div class="skill-group glass-card">
+                        <h3>AI & ML</h3>
+                        <div class="skill-row"><span>ML</span><div class="bar"><i style="--value: 80%"></i></div></div>
+                        <div class="skill-row"><span>Deep Learning</span><div class="bar"><i style="--value: 76%"></i></div></div>
+                        <div class="skill-row"><span>NLP</span><div class="bar"><i style="--value: 74%"></i></div></div>
+                        <div class="skill-row"><span>Pandas</span><div class="bar"><i style="--value: 86%"></i></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="project-grid">
+                    <article class="project-card glass-card">
+                        <span class="tag">ML</span>
+                        <h3>House Price Prediction</h3>
+                        <p>Built a machine learning model to estimate housing prices using regression-based analysis and data insights.</p>
+                        <div class="project-links">
+                            <a href="#" class="mini-btn">Live Demo</a>
+                            <a href="#" class="mini-btn">GitHub</a>
+                        </div>
+                    </article>
+                    <article class="project-card glass-card">
+                        <span class="tag">NLP</span>
+                        <h3>Resume Relevance Checker</h3>
+                        <p>Created an NLP solution that evaluates how well a resume matches a job description using keyword and semantic analysis.</p>
+                        <div class="project-links">
+                            <a href="#" class="mini-btn">Live Demo</a>
+                            <a href="#" class="mini-btn">GitHub</a>
+                        </div>
+                    </article>
+                    <article class="project-card glass-card">
+                        <span class="tag">Dashboard</span>
+                        <h3>Crime Pattern Intelligence Dashboard</h3>
+                        <p>Designed an interactive analysis dashboard that highlights crime trends and visual patterns across different regions.</p>
+                        <div class="project-links">
+                            <a href="#" class="mini-btn">Live Demo</a>
+                            <a href="#" class="mini-btn">GitHub</a>
+                        </div>
+                    </article>
+                    <article class="project-card glass-card">
+                        <span class="tag">AI</span>
+                        <h3>FloodSense India</h3>
+                        <p>Developed a data-driven project aimed at detecting flood-prone areas and supporting preparedness through predictive insights.</p>
+                        <div class="project-links">
+                            <a href="#" class="mini-btn">Live Demo</a>
+                            <a href="#" class="mini-btn">GitHub</a>
+                        </div>
+                    </article>
+                    <article class="project-card glass-card">
+                        <span class="tag">Optimization</span>
+                        <h3>Flight Route Optimization</h3>
+                        <p>Explored route optimization strategies to improve planning efficiency and reduce travel constraints with analytical methods.</p>
+                        <div class="project-links">
+                            <a href="#" class="mini-btn">Live Demo</a>
+                            <a href="#" class="mini-btn">GitHub</a>
+                        </div>
+                    </article>
+                    <article class="project-card glass-card">
+                        <span class="tag">Forecasting</span>
+                        <h3>Stock Price Prediction</h3>
+                        <p>Built a forecasting model that analyzes historical patterns to estimate short-term stock movement trends.</p>
+                        <div class="project-links">
+                            <a href="#" class="mini-btn">Live Demo</a>
+                            <a href="#" class="mini-btn">GitHub</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item glass-card">
+                        <h3>Internship</h3>
+                        <p>Gained hands-on experience with software development workflows, teamwork, and real-world project execution.</p>
+                    </div>
+                    <div class="timeline-item glass-card">
+                        <h3>Workshops</h3>
+                        <p>Participated in technical workshops focused on AI, web development, and modern coding practices.</p>
+                    </div>
+                    <div class="timeline-item glass-card">
+                        <h3>Hackathons</h3>
+                        <p>Built collaborative solutions under tight deadlines while strengthening creativity and problem-solving skills.</p>
+                    </div>
+                    <div class="timeline-item glass-card">
+                        <h3>Certifications</h3>
+                        <p>Completed structured learning paths to strengthen core concepts in AI, programming, and data-driven development.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements">
+            <div class="container">
+                <h2 class="section-title">Achievements</h2>
+                <div class="stats-grid">
+                    <div class="stat-card glass-card">
+                        <strong class="counter" data-target="12">0</strong>
+                        <span>Projects Completed</span>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <strong class="counter" data-target="8">0</strong>
+                        <span>Certifications</span>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <strong class="counter" data-target="4">0</strong>
+                        <span>Hackathons</span>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <strong class="counter" data-target="20">0</strong>
+                        <span>GitHub Repositories</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="education-grid">
+                    <div class="edu-card glass-card">
+                        <h3>B.Tech Computer Science</h3>
+                        <p>Focused on programming, AI, software engineering, and problem-solving fundamentals.</p>
+                    </div>
+                    <div class="edu-card glass-card">
+                        <h3>Special Interests</h3>
+                        <p>Machine learning, data science, web technologies, and building practical real-world applications.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h2 class="section-title">Services</h2>
+                <div class="services-grid">
+                    <div class="service-card glass-card"><h3>AI Development</h3><p>Building AI-driven tools and intelligent experiences.</p></div>
+                    <div class="service-card glass-card"><h3>ML Solutions</h3><p>Creating predictive models and analytical workflows.</p></div>
+                    <div class="service-card glass-card"><h3>Data Analytics</h3><p>Turning raw data into useful insights and dashboards.</p></div>
+                    <div class="service-card glass-card"><h3>Full Stack</h3><p>Designing and developing modern web applications end to end.</p></div>
+                    <div class="service-card glass-card"><h3>UI/UX Design</h3><p>Crafting polished, user-friendly visual interfaces.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="container">
+                <h2 class="section-title">Testimonials</h2>
+                <div class="testimonial-card glass-card">
+                    <p class="quote">“Gopika brings curiosity, dedication, and a thoughtful approach to every project she takes on.”</p>
+                    <div class="testimonial-author">
+                        <strong>Mentor</strong>
+                        <span>Technology & Innovation</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container contact-grid">
+                <div class="contact-card glass-card">
+                    <h2 class="section-title left">Let’s Connect</h2>
+                    <form id="contactForm" aria-label="Contact form">
+                        <div class="form-row">
+                            <label for="contact-name" class="sr-only">Your Name</label>
+                            <input type="text" id="contact-name" name="name" placeholder="Your Name" required aria-required="true">
+
+                            <label for="contact-email" class="sr-only">Your Email</label>
+                            <input type="email" id="contact-email" name="email" placeholder="Your Email" required aria-required="true">
+                        </div>
+
+                        <label for="contact-subject" class="sr-only">Subject</label>
+                        <input type="text" id="contact-subject" name="subject" placeholder="Subject">
+
+                        <label for="contact-message" class="sr-only">Message</label>
+                        <textarea id="contact-message" name="message" rows="5" placeholder="Message" required aria-required="true"></textarea>
+
+                        <button class="btn" type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info glass-card">
+                    <h3>Contact Details</h3>
+                    <p><i class="fa-solid fa-envelope"></i> gopikapriyanka@example.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 73589 38858</p>
+                    <p><i class="fa-solid fa-location-dot"></i> India</p>
+                    <div class="map-box">
+                        <iframe src="https://www.google.com/maps?q=India&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> Gopika Priyanka. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
